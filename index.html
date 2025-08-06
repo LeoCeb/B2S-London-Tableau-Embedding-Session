@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back to School London 🎒</title>
+  </head>
+  <body>
+    <h1>This is some text</h1>
+
+    <h2>This is some text</h2>
+
+    <h3>This is some text</h3>
+
+    <div>This is a divider</div>
+
+    <div>This is another divider</div>
+
+    <fieldset id="first_row_of_buttons">
+      <legend>Filter the View</legend>
+      <input type="button" value="Oregon And Washington Only!" id="onw" />
+      <input type="button" value="Clear Filter" id="clear" />
+      <input type="button" value="Undo" id="undo" />
+    </fieldset>
+
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+
+    <tableau-viz
+      id="tableauViz"
+      src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+      toolbar="bottom"
+      hide-tabs
+      height="900px"
+      width="850px"
+    >
+    </tableau-viz>
+    <script src="app.js"></script>
+  </body>
+</html>
